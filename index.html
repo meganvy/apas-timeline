@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Timeline | Basic demo</title>
+
+  <style type="text/css">
+    body, html {
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
+
+  <script src="vis-4.21.0/dist/vis.js"></script>
+  <link href="vis-4.21.0/dist/vis.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+<div class="other-text"> 
+<div class="description" >
+      <h1 style="color: #1A535C"> APAS Across Time at UVA </h1>
+      <p> The introduction, development and reception of an Asian-Pacific American Studies program and minor have come about laboriously, in fits and starts, and are more than 20 years in the making. How did a program conceived ambitiously, and so long ago, stagnate?</p>
+      <p style="color: gray;"> This timeline is best seen on desktop view. Zoom in/out, drag, scroll, and select specific events for more detail. </p>
+    </div>
+</div>
+
+<div id="visualization"></div>
+
+<div class="other-text bottom">
+    <div id="c1" style="display:none;">
+      <h3> ASU drafts five-year plan </h3>
+      <p> The struggle for a formalized APA Studies department formally begins in 1995, when it is written into the Asian Student Union's five-year plan. </p> 
+      <a href="http://www.cavalierdaily.com/article/2005/02/a-minor-victory">Source</a>
+    </div>
+    <div id="c2" style="display:none;">
+      <h3> Student-led momentum </h3>
+      <p> A student-led group, established in Spring 2000 conceptualizes an Asian-Pacific American Studies Program with courses such as "Asians in the United States," "Literature of the Asian Diaspora" or "Asian American Economics." They work towards <strong> "four major components of the proposed program, including finding faculty, promoting student interest, obtaining funding and developing a basic curriculum."</strong></p>
+      <p> In 2001, third-year Ryan McCarthy, "fourth-year College student Janis Millete, third-year College student Jennifer Na and several other students, under the direction of [Prof. Gilbert] Roy,"formulate a curriculum for AMEL 301 through their independent research.</p>
+      <p>"The students researched other universities with existing AAS programs and contacted professors and department chairs in the field."</p> 
+      <p> Prof. Gilbert Roy, Director of Asian Studies and the professor who oversees independent study in APAS, cannot teach the course next semester. It seems like the Spring 2002 semester will have no new courses on Asian-American issues; however, McCarthy, Millete, and Na pinpoint Assistant Dean of Students Ajay Nair to take over.</p>
+      <p> <strong> Initially, AMEL 302 is not listed in the Course Offering Directory.</strong> </p>
+      <p> Although some students are <strong> ready to protest,</strong> initial discussion with the University's College Dean Ayers indicates that <strong>the APAS program is a top priority as soon as budget issues are resolved.</strong> </p>
+      <a href="http://www.cavalierdaily.com/article/2001/11/asian-american-studies-gains-ground">Source,</a> <a href="http://www.cavalierdaily.com/article/2000/10/students-propose-asian-american-studies-plan"> source,</a> <a href="http://www.cavalierdaily.com/article/2002/02/college-to-create-asian-american-studies-program"> source </a>
+    </div>
+    <div id="c3" style="display:none;">
+      <h3> Hiring freeze lifted </h3>
+      <p> An article in the Cavalier Daily expresses that <strong>the faculty hiring freeze has been lifted sometime prior to its publication, with "professors' salaries increasing by 2% this year." </strong>Asian Student Union President Todd Aman and Prof. Pensri Ho in the Anthropology department introduce legistation in Student Council to Create an APAS Program as soon as it is viable.</p>
+      <p> The program has the support of American Studies Professor Sylvia Chong. </p>
+      <p> APA students currently comprise more about 14% of the student body amongst undergrads, jumping somewhat from past years.</p>
+      <a href="http://www.cavalierdaily.com/article/2004/09/asian-american-studies-major-gains-momentum">Source</a>
+    </div>
+    <div id="c6" style="display:none;">
+      <h3> First course offerings </h3>
+      <p> On August 29, 2002, the Asian-Pacific American Studies program begins offering its first courses, which are independent study. This is followed up with a two-semester course called <strong> AMEL 301-302, "Introduction to Asian American Culture/Topics in Modern Asian America." </strong> </p> 
+      <a href="http://www.cavalierdaily.com/article/2004/09/implement-asian-american-studies">Source</a>
+    </div>
+    <div id="c7" style="display:none;">
+      <h3> Rodriguez replaces Nair </h3>
+      <p>
+      Daisy Rodriguez replaces Ajay Nair as Assistant Dean of Students. She takes over the role of teaching his class - one of the first to be offered in Asian-Pacific American Studies - which he recalls at a later event as a course that <strong> "registered 120 students in addition to a waitlist."</strong> Rodriguez's iteration of the class has a capacity of <strong> 70 students, as well as a waitlist of its own. </strong> </p>
+      <p>
+        Nair goes on to become the Dean of Campus Life at Emory University, and later its president.
+      </p>
+      <a href="http://www.cavalierdaily.com/article/2008/10/asian-student-union">Source,</a> <a href="http://news.emory.edu/stories/2017/12/er_nair_announcement/campus.html">source</a>  
+    </div>
+    <div id="c8" style="display:none;">
+      <h3> Search for an APAS director </h3>
+      <p>
+      "In February 2002, after the Asian Student Union presented the administration with an online petition <strong> signed by nearly 500 students,</strong> the University announced plans to start an Asian-American Studies Program as soon as money could be procured for a director. Of course, that commitment came in the midst of bad times financially while the University's hiring freeze was still in effect."
+      </p>
+      <p> Two years later in 2004, an article in the Cavalier Daily will lament: "Now that the freeze has long since thawed, though, the program has still managed to fall by the wayside. <strong> Inaction is no longer acceptable."</strong></p>
+      <a href="http://www.cavalierdaily.com/article/2004/09/implement-asian-american-studies">Source</a>  
+    </div>
+    <div id="c9" style="display:none;">
+      <h3> Studco resolution passes unanimously </h3>
+      <p>
+        After the resolution is initially tabled, Student Council reconvenes to approve a proposal that will <strong> endorse the recently-created Asian-Pacific American Studies program, </strong> as well as strategies to develop this into a department. </p> <p>
+        "[ASU President Todd] Aman argued that student support was widespread by citing an ASU-sponsored online poll and paper petition. According to Aman, <strong> 1,529 people expressed their support through the Internet or by signing the petition in a period of just six days. </strong></p> <p>
+        "Some of the supporters brought a sign to the meeting that read, '10 Years Is Too Long. UVA Students Deserve Better,' referring to efforts by the ASU that started in 1995 with the issuance of its Five Year Plan."
+      </p>
+      <a href="http://www.cavalierdaily.com/article/2004/09/council-passes-resolution-for-asian-american-studi"> Source </a>
+    </div>
+    <div id="c10" style="display:none;">
+      <h3> APAS Minor Unveiled </h3>
+      <p> The first interest meeting for the Asian-Pacific American Studies minor kicks off in Newcomb Hall, after the program was approved in the previous semester. Assistant Dean of Students Daisy Rodriguez encourages students of all backgrounds to participate in the program.
+      </p>
+      <p>"Enrico Castillo, vice president of the Asian Student Union, said <strong> rather than studying the Asian cultures that are situated in Asia, students will be able to study the experience of Asians who live in America."</strong></p>
+      <p>  
+        APA students currently comprise 11% of the student body amongst undergrads.
+      </p>
+      <a href="http://www.cavalierdaily.com/article/2005/02/asian-pacific-american-studies-officially-set-to-b">Source,</a> <a href="http://www.cavalierdaily.com/article/2005/02/a-minor-victory"> source </a>
+    </div>
+    <div id="c11" style="display:none;">
+      <h3> Wilcox selected to replace Rodriguez </h3>
+      <p> 
+      <strong>Sarah Wilcox,</strong> formerly the Greek area director at William & Mary, is selected as a replacement for Assistant Dean of Students Daisy Rodriguez, expressing hopes to work with the <strong>multicultural Greek council</strong> as well as the rest of the UVA community. As a part of her role, she is anticipated to <strong> undertake operations within the Office of the Dean of Students (ODOS)</strong>, dealing with issues including "academic withdrawals, and directing students to the resources Grounds offers." 
+      </p> 
+      <p>
+        <strong> However, this falls through for obscure/unknown reasons. </strong>
+      </p>
+      <a href="http://www.cavalierdaily.com/article/2006/07/wilcox-to-replace-rodriguez">Source,</a>
+      <a href="http://www.cavalierdaily.com/article/2006/09/dean-wilcox-takes-the-reins"> source </a>
+    </div>
+    <div id="c12" style="display:none;">
+      <h3> Fighting for an expanded APAS Program </h3>
+      <p> 
+      Following the outsurge of support for the APAS minor, <strong> faculty and students alike anticipate the benefits and challenges of continuing to expand the APAS program, </strong>meeting to "discuss how an ethnic studies program could fit into the University's curriculum." </p> <p> Diversity Chair Ryan McElveen sees the value of ethnic studies to learn about "how the marked 'other' functions in our society"; AAS Prof. Cynthia Hoehler-Fatton mentions that students are forced to challenge preconceived ideas about race; associate dean of Academic Programs Richard Handler connects student diversity with a push for curricula "exploring issues of ethnicity and race"; and APAS Prof. Sylvia Chong impresses that students must show desire to take course offerings and fill classes in order to enable the further expansion of the program.</p> 
+      <p>
+        Programming by the Asian Student Union includes a forum entitled <strong> "Where Do We Go From Here? The History and Future of Asian-Pacific American Studies." </strong>Guest speaker Prof. Larry Hajime Shinagawa, from the University of Maryland, compares APA programs on the East and West Coast and discusses issues to their advancement at UVA - specifically, <strong> the stalling of the APA studies program and the lack of faculty in the program. </strong>
+      </p>
+      <p>
+                APA students currently comprise more than 13% of the student body amongst undergrads.
+      </p>
+      <a href="http://www.cavalierdaily.com/article/2007/11/pushing-for-apa-studies">Source,</a>
+      <a href="http://www.cavalierdaily.com/article/2007/04/faculty-discuss-merits-of-ethnic-studies-in-curric"> source </a>
+    </div>
+    <div id="c4" style="display:none;">
+      <h3> BOV discusses Asian American statistics </h3>
+      <p> The Board of Visitors discusses concerns about Asian-American students being overrepresented in the undergraduate population, and underrepresented amongst faculty members. Interim vice provost for faculty advancement, <strong> Sharon Hostler, says that Asian-Americans are overrepresented in students, making up 11.4% of undergraduates compared with 4.4% of the US population.</strong> Dean Greg Roberts explains this due to increases in international applications.</p>
+      <p> The University of Virginia <strong> ranks 58 out of 61 for its percentage of Asian-American faculty,</strong> according to the American Association of Universities. Asian-Americans are even more disproportionately represented at higher tiers of American higher education, such as in tenure tracks. The BOV also notes that there are <strong> three times as many Asian-American men on faculty than women.</strong> Bill Harvey, the vice present and chief officer for diversity and equity, suggests these trends can be explained because <strong> "Asian-Americans typically do not actively seek out leadership positions and may prefer to take a more supportive role." He hopes that by emphasizing the sciences the University can attract more Asian-Americans.</strong></p>
+      <p> 
+        Shortly thereafter, Sylvia Chong, an assistant professor of English and American Studies and the director of the Asian Pacific American Studies program, points out the stereotypes inherent in the article addressing the BOV's response to Asian American statistics at the University. She notes that it is <strong> misleading to say APA undergraduates are "overrepresented" relative to the US population and says "a better indicator might be the APA population at other American Association of Universities institutions, where the University ranks 31 out of 58." </strong> She also points out that the University <strong> conflates Asian-American students with Asian internationals, perpetuating xenophobia,</strong> and says that Harvey's comments in particular further the <strong> model minority myth - there is no precedence for Asian-Pacific Americans to be passive and supportive instead of going into leadership.</strong>
+      </p>
+      <p> She concludes by mentioning that solely relying on APA faculty from the sciences is a disservice to APA scholars in other fields like the humanities and social sciences, and says <strong> recruiting and retaining APA faculty "will require a paradigm shift, valuing research on APA issues as much as research on Asia or non-APA minorities." </strong></p>
+      <a href="http://www.cavalierdaily.com/article/2009/04/officials-discuss-asian-faculty-diversity-concerns">Source,</a> <a href="http://www.cavalierdaily.com/article/2009/04/letter-diversity-discussion">source</a>
+    </div>
+    <div id="c5" style="display:none;">
+      <h3> And then: nothing...? </h3>
+      <p> 
+        <strong>Daisy Rodriguez is never replaced by an Assistant Dean of Students that interfaces with the APA community at the University. Plans to work more collaboratively with the Multicultural Greek Council and other organizations are tabled.</strong> Despite support and financial ability, little action is taken in order to recruit and retain faculty to the program.
+      </p> 
+      <p>
+        Many faculty in the APAS minor eventually take on roles at other schools; despite those remaining making a tremendous effort to support students and teach course offerings, there is no formalized major or department with which to recruit faculty to these positions.
+      </p>
+      <p>
+        In 2018, Prof. Sylvia Chong, the sole professor for a class required for the minor, is unable to lead the class due to other courses in new University initiatives. <strong> Undergraduates who intend to participate in the minor have no options to complete it for numerous semesters. </strong>
+      </p>
+      <h3> Here and Now </h3>
+      <p>
+        The Asian Leaders Council (ALC) recently released a report on academic reform that sheds light on these staggering issues, as well as formalizes a list of steps to take on the University's part. Given the recent inauguration of President James Ryan, as a successor to Teresa Sullivan, students are hopeful for change in the resources and the lack of administration available to the APAS program. 
+      </p>
+      <p> <strong> You can make a difference in this process; make your voice heard. </strong> Support and enroll in existing course offerings, speak out and protest on behalf of an expanded APAS minor and recruitment of APAS faculty, and help the University acknowledge an important community that remains unheard. </strong> </p>
+      <a href="https://docs.google.com/document/d/19GVS212B1wv59cLgFrbVt3-GNoKzIgvvsx9a_F3YuUk/edit">Source</a>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+  // DOM element where the Timeline will be attached
+  var container = document.getElementById('visualization');
+
+  // Create a DataSet (allows two way data-binding)
+  var items = new vis.DataSet([
+    {id: 1, content: 'ASU drafts five-year plan', start: '1995-10-01'},
+    {id: 2, content: 'Student-led momentum', start: '1997-01-01', end: '2002-01-01'},
+    {id: 3, content: 'Hiring freeze lifted', start: '2004-09-01'},
+    {id: 6, content: 'First course offerings', start: '2002-08-29'},
+    {id: 7, content: 'Rodriguez replaces Nair', start: '2003-08-30'},
+    {id: 8, content: 'Search for an APAS director', start: '2002-02-01'},
+    {id: 9, content: 'Studco resolution passes unanimously', start: '2004-09-21'},
+    {id: 10, content: 'APAS minor unveiled', start: '2005-02-10'},
+    {id: 11, content: 'Wilcox selected to replace Rodriguez', start: '2006-07-05'},
+    {id: 12, content: 'Fighting for an expanded APAS Program', start: '2006-04-10', end: '2009-03-01'},
+    {id: 4, content: 'BOV discusses AsAm statistics', start: '2009-04-02'},
+    {id: 5, content: 'And then: nothing...?', start: '2012-01-01', end: '2018-01-01'}
+  ]);
+
+  // Configuration for the Timeline
+  var options = {
+    width: '100%',
+    height: '50vh',
+    
+    template: function (item, element, data) {
+    return '<p>' + item.content + ' </p>'; }
+  };
+
+  // Create a Timeline
+  var timeline = new vis.Timeline(container, items, options);
+</script>
+<script>
+  timeline.on('select', function (properties) {
+    var a = "c" + (properties.items);
+    var x = document.getElementById(a);
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+    for (i = 0; i < 12; i++) {
+      var b = "c" + String(i+1);
+      if (a != b) {
+        var y = document.getElementById(b);
+        y.style.display = "none";
+      }
+    }
+});
+</script>
+</body>
+</html>
